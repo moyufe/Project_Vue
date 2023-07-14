@@ -1,18 +1,15 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite + Pinia + Element-Puls
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+该项目是我照着某个公司的页面自己编写的。基本完成该页面的功能、样式、业务逻辑的编写。我在里面对路由进行了封装并用到==动态路由技术提升速度==；对 axios 进行了==二次封装提升代码的复用性==，并且通过我对该公司后端返回的==数据分析==，自己将该所有的==请求参数进行的封装==，并通过 ==Pinia 高效、合理的全局管理数据==。
 
-## Recommended IDE Setup
+整体页面完成的功能点如下：
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1. 搜索功能的实现
+2. 服务类型的二级级联（利用了重绘思想，从而增加页面性能），整个服务选项的动画控制与组件化
+3. 合理化使用 Element-Plus 与 vue v-for 指令对信息展示区组件化的编写
+4. 利用 Element-Plus 分页组件 与 Pinia 做到分页更新页面的效果
+5. 利用 TypeScript 进行了类型判断断言，编写出了高质量的 js 代码
 
-## Type Support For `.vue` Imports in TS
+最后，如果贵司下载的该代码并运行，请在地址栏跳转到 search 页面，即可得知该页面的效果。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+![展示图](https://gitee.com/yihuachen/moyvfei_img/raw/master/img/%E5%B1%95%E7%A4%BA%E5%9B%BE.jpg)
